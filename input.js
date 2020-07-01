@@ -11,13 +11,13 @@ const handleUserInput = function (data) {
   if (data === '\u0003') {
     process.exit();
   } else if (data === 'w') {
-    console.log("up")
+    connection.write("Move: up")
   } else if (data === 'a') {
-    console.log("left")
+    connection.write("Move: left")
   } else if (data === 's') {
-    console.log("down")
+    connection.write("Move: down")
   } else if (data === 'd') {
-    console.log("right")
+    connection.write("Move: right")
   }
 };
 
