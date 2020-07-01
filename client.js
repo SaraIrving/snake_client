@@ -14,6 +14,7 @@ const connect = function() {
   
   conn.on("connect", () => {
     console.log("Successfully connected to game server")
+    conn.write("Name: SKI")
   });
 
   return conn;
